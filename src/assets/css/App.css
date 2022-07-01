@@ -6,4 +6,48 @@
 body {
     font-family: 'Montserrat', sans-serif;
     src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    background-color: #14181D;
+    color: white;
+}
+
+.heroes-section .top-section {
+    border-radius: 12px;
+}
+
+.heroes-section .top-section .left img, video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.heroes-section .top-section .right .spec {
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 14px;
+    background-color: #E0F300 !important;
+}
+
+.heroes-section .mid-section {
+    margin-top: 120px !important;
+}
+
+.heroes-section .mid-section .content-mid .box-card {
+    border-radius: 12px;
+    color: #E0F300;
+}
+
+.heroes-section .mid-section h3 {
+    font-weight: 800px !important;
+}
+
+.heroes-section .mid-section .content-mid .box-card img {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.heroes-section .mid-section .content-mid .box-card button, .heroes-section .mid-section button {
+    background-color: #E0F300;
+    color: black;
+    font-weight: bold;
 }
