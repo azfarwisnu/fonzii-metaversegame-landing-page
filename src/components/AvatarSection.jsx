@@ -54,22 +54,21 @@ class AvatarSection extends React.Component {
   render() {
     return (
       <>
-        {console.log(this.state.page)}
         <div className="heroes-section container mt-4 pt-4 pb-4 mb-4">
-          <div className="top-section row mt-4 pt-4 bg-dark mx-2 mb-4 pb-4">
-            <div className="col-12 col-md-3 left mb-4 px-4 pb-2 mt-4">
+        <div className="top-section row bg-dark p-5">
+            <div className="col-12 col-md-3 left">
               <img
                 src="https://mantial-nfts.s3.amazonaws.com/mantial-nfts/gog-main/3883.png"
                 alt="nft-testing"
               />
             </div>
-            <div className="col-12 col-md-8 right mb-4 pb-4 mt-4">
-              <div className="content px-2 mx-4">
+            <div className="col-12 col-md-9 right">
+              <div className="content">
                 <h3>
-                  <b>Avatar Collections</b>
+                  <b>Heroes Collections</b>
                 </h3>
                 <div className="box-message">
-                  <p className="mt-2 text-secondary text-justify">
+                  <p className="text-secondary text-justify">
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout. The point of using Lorem Ipsum is that it has a
@@ -83,7 +82,7 @@ class AvatarSection extends React.Component {
                     (injected humour and the like).
                   </p>
                 </div>
-                <div className="mb-2 pb-2 pt-4 text-dark">
+                <div className="pt-4 text-dark">
                   <div className="row">
                     <div className="col-12 col-md-5 spec mb-4 mx-2 bg-secondary pb-2">
                       <div className="d-flex justify-content-between px-2 mt-2">
@@ -97,13 +96,13 @@ class AvatarSection extends React.Component {
                         <div>202k</div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 spec mb-4 mx-2 bg-secondary pb-2">
+                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2">
                       <div className="d-flex justify-content-between px-2 mt-2">
                         <div>Listed</div>
                         <div>1.9k</div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 spec mb-4 mx-2 bg-secondary pb-2">
+                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2">
                       <div className="d-flex justify-content-between px-2 mt-2">
                         <div>Sale</div>
                         <div>2.9k</div>
