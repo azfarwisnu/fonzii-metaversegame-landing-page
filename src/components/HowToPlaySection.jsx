@@ -181,8 +181,8 @@ class HowToPlaySection extends React.Component {
                 </div>
                 <div className="mt-4 pb-4 text-center pt-4">
                   <span>Full Guide</span>
-                  <p className="text-white"><a className="text-white" href="https://guildofguardians.medium.com/gog-x-sandbox-faction-challenge-4233fdfaa80f">
-                  https://guildofguardians.medium.com/gog-x-sandbox-faction-challenge-4233fdfaa80f</a></p>
+                  <p className="text-white"><a className="text-muted" href="https://guildofguardians.medium.com/gog-x-sandbox-faction-challenge-4233fdfaa80f">
+                  Click here</a></p>
                 </div>
               </div>
             </div>
