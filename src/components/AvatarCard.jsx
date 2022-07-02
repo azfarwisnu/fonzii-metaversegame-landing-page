@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class AvatarCard extends React.Component {
   render() {
@@ -20,21 +20,20 @@ class AvatarCard extends React.Component {
                 {this.props.data.sell.data.properties.name}
               </p>
               <div className="row pt-4">
-                <div className="col-12 col-md-7 mx-1">
+                <div className="col-12 col-md-6">
                   <p className="text-truncate">
-                    {this.props.data.buy.data.quantity / 10 ** 18}{" "}
+                    {this.props.data.buy.data.quantity / 10 ** 18}{' '}
                     {this.props.data.buy.type}
                   </p>
                 </div>
-                <div className="col-12 col-md-4 mx-1">
+                <div className="col-12 col-md-6 text-lg-end">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href={`https://market.immutable.com/assets/0x83f120283c30c796ebe9216ccaf6718c31213681/${this.props.data.sell.data.token_id}`}
+                    className="btn btn-primary border border-0"
                   >
-                    <button className="btn btn-primary border border-0">
-                      <span className="mx-1">Details</span>
-                    </button>
+                    Details
                   </a>
                 </div>
               </div>

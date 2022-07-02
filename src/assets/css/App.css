@@ -27,10 +27,6 @@ body {
     background-color: #E0F300 !important;
 }
 
-.heroes-section .mid-section {
-    margin-top: 120px !important;
-}
-
 .heroes-section .mid-section .content-mid .box-card {
     border-radius: 12px;
     color: #E0F300;
@@ -46,8 +42,15 @@ body {
     padding-bottom: 15px;
 }
 
-.heroes-section .mid-section .content-mid .box-card button, .heroes-section .mid-section button {
+.heroes-section .mid-section .content-mid .box-card .btn, .heroes-section .mid-section button, .btn-primary {
     background-color: #E0F300;
     color: black;
     font-weight: bold;
 }
+
+.heroes-section .mid-section .content-mid .box-card .btn:hover, .heroes-section .mid-section button:hover, .btn-primary:hover {
+    background-color: #b0c000;
+    color: black;
+    font-weight: bold;
+}
+
