@@ -1,11 +1,14 @@
-import React from 'react';
-import Axios from 'axios';
+import React from "react";
+import Axios from "axios";
 
-import HeroesCard from './HeroesCard';
-import AvatarCard from './AvatarCard';
-import { API_URL } from '../constants/API';
+import HeroesCard from "./HeroesCard";
+import AvatarCard from "./AvatarCard";
+import { API_URL } from "../constants/API";
 
-import img from '../assets/collection/img.png';
+import img from "../assets/collection/img.png";
+import logo from "../assets/collection/gog-logo.webp";
+import sandbox from "../assets/collection/sandbox.png";
+
 
 class HomeSection extends React.Component {
   state = {
@@ -56,31 +59,86 @@ class HomeSection extends React.Component {
         <div className="home-section container">
           <div className="section-one d-flex justify-content-between">
             <div className="align-self-center col-6">
-              <h1>Discover Best Digital Art and Collect NFTs.</h1>
+              <h1>
+                GoG is a Blockchain mobile RPG Collab with Sandbox metaverse
+                game.
+              </h1>
+              <br />
               <p>
-                Discover NFTs by category, track the latest drops, and follow
-                the collections you love. enjoy it.
+                Bot the Builder & his team are hard at work on building the GOG
+                HQ social hub in The Sandbox Metaverse when all of a sudden the
+                entire world is being infested with Zombies, Walkers and other
+                weird undead creatures. Some say they teleported over from The
+                Walking Dead series.
               </p>
               <div>
-                <a href="#" className="btn btn-primary border border-0 p-3">
+                <a
+                  href="https://metamask.io/"
+                  className="btn btn-primary border border-0 p-3"
+                >
                   Connect Wallet
                 </a>
-                <a href="#" className="btn btn-secondary border border-0 p-3 mx-2">
+                <a
+                  href="https://discord.gg/hbn6qkKY"
+                  className="btn btn-secondary border border-0 p-3 mx-2"
+                >
                   Join Discord
                 </a>
               </div>
             </div>
             <img src={img} alt="img" />
           </div>
+          <div className="gogxsandbox text-center">
+            <img src={logo} alt="" className="mx-4" width="300" />
+            <img src={sandbox} alt="" className="mx-4" width="300"/>
+          </div>
+          <div className="section-about mt-4 pt-4 mb-4 pb-4">
+            <h1 className="text-center">About GoG and Sandbox</h1>
+            <p className="text-center">Knowing GoG and Sandbox Project</p>
+            <div className="section-one d-flex justify-content-between">
+              <img src={img} alt="img" />
+              <div className="align-self-center col-6">
+                <h1>
+                  GoG is a Blockchain mobile RPG Collab with Sandbox metaverse
+                  game.
+                </h1>
+                <br />
+                <p>
+                  Bot the Builder & his team are hard at work on building the
+                  GOG HQ social hub in The Sandbox Metaverse when all of a
+                  sudden the entire world is being infested with Zombies,
+                  Walkers and other weird undead creatures. Some say they
+                  teleported over from The Walking Dead series.
+                </p>
+                <div>
+                  <a
+                    href="https://metamask.io/"
+                    className="btn btn-primary border border-0 p-3"
+                  >
+                    Connect Wallet
+                  </a>
+                  <a
+                    href="https://discord.gg/hbn6qkKY"
+                    className="btn btn-secondary border border-0 p-3 mx-2"
+                  >
+                    Join Discord
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="section-heroes">
-            <h1 className="text-center">Explore Marketplace.</h1>
+            <h1 className="text-center">Live Marketplace.</h1>
             <p className="text-center">
-              Various kinds of best NFTs categories.
+              Buying some character and avatar for playing GoG x Sandbox.
             </p>
             <div className="d-flex justify-content-between mx-3 pt-5 mt-5">
               <h3>Live Market Heroes</h3>
               <div className="d-flex align-items-center">
-                <a href="/heroes" className="btn btn-primary border border-0 px-5">
+                <a
+                  href="/heroes"
+                  className="btn btn-primary border border-0"
+                >
                   See All
                 </a>
               </div>
@@ -95,7 +153,10 @@ class HomeSection extends React.Component {
             <div className="d-flex justify-content-between mx-3 mt-5">
               <h3>Live Market Avatar</h3>
               <div className="d-flex align-items-center">
-                <a href="/avatar" className="btn btn-primary border border-0 px-5">
+                <a
+                  href="/avatar"
+                  className="btn btn-primary border border-0"
+                >
                   See All
                 </a>
               </div>

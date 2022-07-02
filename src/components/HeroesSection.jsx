@@ -9,6 +9,7 @@ class HeroesSection extends React.Component {
     data: [],
     page: 1,
     maxPage: 0,
+    lastHeroes: "",
   };
 
   fetchAssetHeroes = () => {
@@ -18,6 +19,7 @@ class HeroesSection extends React.Component {
       this.setState({
         data: result.data.result,
         maxPage: result.data.result.length / 12,
+        lastHeroes: result.data.result[0].sell.data.properties.image_url,
       });
     });
   };
@@ -55,11 +57,12 @@ class HeroesSection extends React.Component {
     return (
       <>
         <div className="heroes-section container mt-4 pt-4 pb-4 mb-4">
-          <div className="top-section row bg-dark p-5">
+          <div className="top-section row bg-dark p-5 mx-4">
             <div className="col-12 col-md-3 left">
               <img
-                src="https://gog-art-assets.s3-ap-southeast-2.amazonaws.com/Content/Thumbnails/Heroes/Prielle/Thumbnail_Hero_Prielle_Elite.png"
+                src={this.state.lastHeroes}
                 alt="nft-testing"
+                className="mb-4"
               />
             </div>
             <div className="col-12 col-md-9 right">
@@ -96,13 +99,13 @@ class HeroesSection extends React.Component {
                         <div>202k</div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2">
+                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
                       <div className="d-flex justify-content-between px-2 mt-2">
                         <div>Listed</div>
                         <div>1.9k</div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2">
+                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
                       <div className="d-flex justify-content-between px-2 mt-2">
                         <div>Sale</div>
                         <div>2.9k</div>

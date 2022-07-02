@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Heroes from './pages/Heroes';
 import Avatar from './pages/Avatar';
 import NavBar from './components/NavBar';
+import HowToPlay from './pages/HowToPlay'
 
 class App extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class App extends React.Component {
         <Switch>
           <Route component={Avatar} path="/avatar" exact />
           <Route component={Heroes} path="/heroes" exact />
+          <Route component={HowToPlay} path="/how-to-play" exact />
           <Route component={Home} path="/" exact />
         </Switch>
       </BrowserRouter>
