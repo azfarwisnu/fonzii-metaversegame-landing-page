@@ -1,6 +1,7 @@
 import React from 'react';
 
 import logo from '../assets/collection/gog-logo.webp';
+import NavItem from './NavItem';
 
 class NavBar extends React.Component {
   constructor() {
@@ -36,20 +37,16 @@ class NavBar extends React.Component {
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav">
-                <a className="nav-link link-light active" href="/">
-                  Home
-                </a>
-                <a className="nav-link link-light" href="/#about">
-                  About
-                </a>
-                <a className="nav-link link-light" href="/heroes">
-                  Heroes
-                </a>
-                <a className="nav-link link-light" href="/avatar">
-                  Avatar
-                </a>
-                <a className="nav-link btn btn-primary col-2 col-md-auto" href="/how-to-play">
-                  Guide
+                <NavItem name="Home" href="/" />
+                <NavItem name="About" href="/#about" />
+                <NavItem name="Guide" href="/how-to-play" />
+                <NavItem name="Heroes" href="/heroes" />
+                <NavItem name="Avatar" href="/avatar" />
+                <a
+                  className="nav-link btn btn-primary col-2 col-md-auto ms-3"
+                  href="/developer"
+                >
+                  Developer
                 </a>
               </div>
             </div>

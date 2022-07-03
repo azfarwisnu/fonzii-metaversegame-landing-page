@@ -1,14 +1,18 @@
-import React from "react";
-import AvatarSection from "../components/AvatarSection"
+import React from 'react';
+import AvatarSection from '../components/AvatarSection';
 
 class Heroes extends React.Component {
-    render(){
-        return(
-            <>
-            <AvatarSection />
-            </>
-        )
-    }
+  componentDidMount() {
+    document.title = 'Avatar Market';
+  }
+
+  render() {
+    return (
+      <>
+        <AvatarSection />
+      </>
+    );
+  }
 }
 
 export default Heroes;
