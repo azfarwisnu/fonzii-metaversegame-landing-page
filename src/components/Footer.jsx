@@ -21,8 +21,19 @@ class Footer extends React.Component {
                 </a>
               </p>
               <p>
-                <a href="https://market.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11" class="link-light">
+                <a
+                  href="https://market.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11"
+                  class="link-light"
+                >
                   Market
+                </a>
+              </p>
+              <p>
+                <a
+                  href="/developer"
+                  class="link-light"
+                >
+                  Developer Info
                 </a>
               </p>
             </div>
@@ -37,7 +48,13 @@ class Footer extends React.Component {
               </a>
             </div>
           </div>
-          <p className="text-center mt-3 mx-2">Copyright by du0_Kemayoran - ITechno Cup PNJ</p>
+          <p className="text-center mt-3 mx-2">
+            Copyright by{' '}
+            <a href="/developer" class="link-light">
+              du0_Kemayoran
+            </a>{' '}
+            - ITechno Cup PNJ
+          </p>
         </footer>
       </>
     );
