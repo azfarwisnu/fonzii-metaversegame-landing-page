@@ -138,7 +138,7 @@ class HomeSection extends React.Component {
             <h1 className="text-center fw-bold">About GoG and Sandbox</h1>
             <p className="text-center">Knowing GoG and Sandbox Project</p>
             <div className="row mt-5">
-              <div className="col-12 col-md-6 align-self-center">
+              <div className="col-12 col-md-6 align-self-center order-2 order-sm-1">
                 <iframe
                   className="rounded-3"
                   width="100%"
@@ -151,7 +151,7 @@ class HomeSection extends React.Component {
                 ></iframe>
               </div>
               <div
-                className="align-self-center col-12 col-md-6 pt-4"
+                className="align-self-center col-12 col-md-6 pt-4 order-1 order-sm-2"
                 data-aos="fade-up"
                 data-aos-offset="50"
                 data-aos-delay="1"

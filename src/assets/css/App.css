@@ -10,50 +10,8 @@ body {
   color: white;
 }
 
-nav .navbar-toggler {
-  padding: 0;
-}
-
-nav .navbar-toggler:focus {
-  text-decoration: none;
-  outline: 0;
-  box-shadow: 0 0 0 0rem;
-}
-
-@media screen and (max-width: 767px) {
-  nav .navbar-collapse {
-    position: absolute;
-    z-index: 10;
-    top: 100%;
-    right: 0px;
-    background-color: #353b42;
-    padding: 1rem;
-  }
-}
-
-nav .collapse-market.collapse:not(.show) {
-  display: none !important;
-}
-
-nav .collapse-market {
-  position: absolute;
-  top: 100%;
-  right: 0px;
-  background-color: #353b42;
-  padding: 1rem;
-  z-index: 10;
-}
-
-@media screen and (max-width: 768px) {
-  nav .collapse-market {
-    position: absolute;
-    top: 0px;
-    right: 100%;
-  }
-}
-
-nav .collapse-market .navbar-nav {
-  flex-direction: column !important;
+nav .navbar-nav .active {
+  color: #E0F300;
 }
 
 .home-section .carousel button {
