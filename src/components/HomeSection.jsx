@@ -1,14 +1,14 @@
-import React from "react";
-import Axios from "axios";
+import React from 'react';
+import Axios from 'axios';
 
-import HeroesCard from "./HeroesCard";
-import AvatarCard from "./AvatarCard";
-import { API_URL } from "../constants/API";
+import HeroesCard from './HeroesCard';
+import AvatarCard from './AvatarCard';
+import { API_URL } from '../constants/API';
 
-import img from "../assets/collection/img.png";
-import logo from "../assets/collection/gog-logo.webp";
-import sandbox from "../assets/collection/sandbox.png";
-
+import gogxsandbox1 from '../assets/collection/gogxsandbox1.jpg';
+import gogxsandbox2 from '../assets/collection/gogxsandbox2.jpg';
+import logo from '../assets/collection/gog-logo.webp';
+import sandbox from '../assets/collection/sandbox.png';
 
 class HomeSection extends React.Component {
   state = {
@@ -57,21 +57,13 @@ class HomeSection extends React.Component {
     return (
       <>
         <div className="home-section container">
-          <div className="section-one d-flex justify-content-between">
-            <div className="align-self-center col-6">
-              <h1>
+          <div className="section-one row mt-5">
+            <div className="align-self-center col-12 col-md-6">
+              <h1 className="fw-bold">
                 GoG is a Blockchain mobile RPG Collab with Sandbox metaverse
                 game.
               </h1>
-              <br />
-              <p>
-                Bot the Builder & his team are hard at work on building the GOG
-                HQ social hub in The Sandbox Metaverse when all of a sudden the
-                entire world is being infested with Zombies, Walkers and other
-                weird undead creatures. Some say they teleported over from The
-                Walking Dead series.
-              </p>
-              <div>
+              <div className="mt-5">
                 <a
                   href="https://metamask.io/"
                   className="btn btn-primary border border-0 p-3"
@@ -86,59 +78,119 @@ class HomeSection extends React.Component {
                 </a>
               </div>
             </div>
-            <img src={img} alt="img" />
-          </div>
-          <div className="gogxsandbox text-center">
-            <img src={logo} alt="" className="mx-4" width="300" />
-            <img src={sandbox} alt="" className="mx-4" width="300"/>
-          </div>
-          <div className="section-about mt-4 pt-4 mb-4 pb-4">
-            <h1 className="text-center">About GoG and Sandbox</h1>
-            <p className="text-center">Knowing GoG and Sandbox Project</p>
-            <div className="section-one d-flex justify-content-between">
-              <img src={img} alt="img" />
-              <div className="align-self-center col-6">
-                <h1>
-                  GoG is a Blockchain mobile RPG Collab with Sandbox metaverse
-                  game.
-                </h1>
-                <br />
-                <p>
-                  Bot the Builder & his team are hard at work on building the
-                  GOG HQ social hub in The Sandbox Metaverse when all of a
-                  sudden the entire world is being infested with Zombies,
-                  Walkers and other weird undead creatures. Some say they
-                  teleported over from The Walking Dead series.
-                </p>
-                <div>
-                  <a
-                    href="https://metamask.io/"
-                    className="btn btn-primary border border-0 p-3"
-                  >
-                    Connect Wallet
-                  </a>
-                  <a
-                    href="https://discord.gg/hbn6qkKY"
-                    className="btn btn-secondary border border-0 p-3 mx-2"
-                  >
-                    Join Discord
-                  </a>
+            <div className="col-12 col-md-6">
+              <div
+                id="carouselExampleControls"
+                className="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div className="carousel-inner rounded-3">
+                  <div className="carousel-item active">
+                    <img
+                      src={gogxsandbox1}
+                      className="d-block w-100"
+                      alt="gogxsandbox1"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src={gogxsandbox2}
+                      className="d-block w-100"
+                      alt="gogxsandbox2"
+                    />
+                  </div>
                 </div>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                ></button>
               </div>
             </div>
           </div>
-          <div className="section-heroes">
-            <h1 className="text-center">Live Marketplace.</h1>
+          <div className="gogxsandbox text-center mt-5 pt-5">
+            <img src={logo} alt="" className="mx-4" width="300" />
+            <img src={sandbox} alt="" className="mx-4" width="300" />
+          </div>
+          <div className="section-two mt-5 pt-5" id="about">
+            <h1 className="text-center fw-bold">About GoG and Sandbox</h1>
+            <p className="text-center">Knowing GoG and Sandbox Project</p>
+            <div className="row mt-5">
+              <div className="col-12 col-md-6 align-self-center">
+                <iframe
+                  className="rounded-3"
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/FvpSXeUhL9s"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="align-self-center col-12 col-md-6">
+                <h1 className="fw-bold">What is GoG?</h1>
+                <p className="mt-5">
+                  Guild of Guardians is a mobile RPG where players can turn
+                  their gaming passion into assets. It will be a multiplayer,
+                  fantasy, action RPG where players build their dream team of
+                  ‘Guardians’ and compete in a guild to earn epic, tradeable
+                  rewards.
+                </p>
+              </div>
+            </div>
+            <div className="row mt-5">
+              <div className="align-self-center col-12 col-md-6">
+                <h1 className="fw-bold">What is Sandbox?</h1>
+                <p className="mt-5">
+                  Guild of Guardians is a mobile RPG where players can turn
+                  their gaming passion into assets. It will be a multiplayer,
+                  fantasy, action RPG where players build their dream team of
+                  ‘Guardians’ and compete in a guild to earn epic, tradeable
+                  rewards.
+                </p>
+              </div>
+              <div className="col-12 col-md-6 align-self-center">
+                <iframe
+                  className="rounded-3"
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/bNF2OHf7Big"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div className="section-three mt-5 pt-5">
+            <h1 className="text-center fw-bold">
+              What is GoG x Sandbox Project
+            </h1>
+            <p className="text-center mt-5 px-5">
+              Bot the Builder & his team are hard at work on building the GOG HQ
+              social hub in The Sandbox Metaverse when all of a sudden the
+              entire world is being infested with Zombies, Walkers and other
+              weird undead creatures. Some say they teleported over from The
+              Walking Dead series.
+            </p>
+            <img
+              src="https://themediaverse.com/wp-content/uploads/2022/02/GuildOfGuardiansg_sandboxevent_victory.jpeg"
+              alt="goghq"
+              className="img-fluid rounded-3 mt-5"
+            />
+          </div>
+          <div className="section-heroes mt-5 pt-5">
+            <h1 className="text-center fw-bold">Explore Marketplace.</h1>
             <p className="text-center">
               Buying some character and avatar for playing GoG x Sandbox.
             </p>
             <div className="d-flex justify-content-between mx-3 pt-5 mt-5">
               <h3>Live Market Heroes</h3>
               <div className="d-flex align-items-center">
-                <a
-                  href="/heroes"
-                  className="btn btn-primary border border-0"
-                >
+                <a href="/heroes" className="btn btn-primary border border-0">
                   See All
                 </a>
               </div>
@@ -153,10 +205,7 @@ class HomeSection extends React.Component {
             <div className="d-flex justify-content-between mx-3 mt-5">
               <h3>Live Market Avatar</h3>
               <div className="d-flex align-items-center">
-                <a
-                  href="/avatar"
-                  className="btn btn-primary border border-0"
-                >
+                <a href="/avatar" className="btn btn-primary border border-0">
                   See All
                 </a>
               </div>
