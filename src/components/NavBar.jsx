@@ -39,14 +39,13 @@ class NavBar extends React.Component {
               <div class="navbar-nav">
                 <NavItem name="Home" href="/" />
                 <NavItem name="About" href="/#about" />
-                <NavItem name="Guide" href="/how-to-play" />
                 <NavItem name="Heroes" href="/heroes" />
-                <NavItem name="Avatar" href="/avatar" />
+                <NavItem name="Avatar" href="/avatar" className='me-3'/>
                 <a
-                  className="nav-link btn btn-primary col-2 col-md-auto ms-3"
-                  href="/developer"
+                  className="nav-link btn btn-primary col-2 col-md-auto"
+                  href="/how-to-play"
                 >
-                  Developer
+                  Guide
                 </a>
               </div>
             </div>

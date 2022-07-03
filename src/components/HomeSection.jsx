@@ -1,16 +1,16 @@
-import React from "react";
-import Axios from "axios";
+import React from 'react';
+import Axios from 'axios';
 
-import HeroesCard from "./HeroesCard";
-import AvatarCard from "./AvatarCard";
-import { API_URL } from "../constants/API";
+import HeroesCard from './HeroesCard';
+import AvatarCard from './AvatarCard';
+import { API_URL } from '../constants/API';
 
-import gogxsandbox1 from "../assets/collection/gogxsandbox1.jpg";
-import gogxsandbox2 from "../assets/collection/gogxsandbox2.jpg";
-import logo from "../assets/collection/gog-logo.webp";
-import sandbox from "../assets/collection/sandbox.png";
+import gogxsandbox1 from '../assets/collection/gogxsandbox1.jpg';
+import gogxsandbox2 from '../assets/collection/gogxsandbox2.jpg';
+import logo from '../assets/collection/gog-logo.webp';
+import sandbox from '../assets/collection/sandbox.png';
 
-import gyb from "../assets/collection/gyb.png"
+import gyb from '../assets/collection/gyb.png';
 
 class HomeSection extends React.Component {
   state = {
@@ -183,11 +183,14 @@ class HomeSection extends React.Component {
               >
                 <h1 className="fw-bold">What is Sandbox?</h1>
                 <p className="mt-5">
-                  Guild of Guardians is a mobile RPG where players can turn
-                  their gaming passion into assets. It will be a multiplayer,
-                  fantasy, action RPG where players build their dream team of
-                  ‘Guardians’ and compete in a guild to earn epic, tradeable
-                  rewards.
+                  The Sandbox is a decentralised, community-driven gaming
+                  ecosystem where creators can share and monetise voxel assets
+                  and gaming experiences on the Ethereum blockchain. Using The
+                  Sandbox's free software, such as VoxEdit and the Game Maker,
+                  players, artists and game designers can create ASSETs and
+                  experiences, such as games, dioramas and art galleries, for
+                  themselves and to share with others. These can be monetised to
+                  earn the creator passive income.
                 </p>
               </div>
               <div className="col-12 col-md-6 align-self-center">
@@ -284,7 +287,7 @@ class HomeSection extends React.Component {
               data-aos-mirror="true"
               data-aos-once="false"
             >
-              <h1 className="pb-4">Partners</h1>
+              <h1 className="pb-4 fw-bold">Partners</h1>
               <div className="row pt-4">
                 <div className="col-6 col-md-6 mb-4">
                   <div>
@@ -315,11 +318,7 @@ class HomeSection extends React.Component {
                 </div>
                 <div className="col-6 col-md-6 mb-4">
                   <div>
-                    <img
-                      src={gyb}
-                      alt="logo"
-                      width="90%"
-                    />
+                    <img src={gyb} alt="logo" width="90%" />
                   </div>
                 </div>
               </div>
