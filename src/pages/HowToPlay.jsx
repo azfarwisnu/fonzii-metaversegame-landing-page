@@ -1,8 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import HowToPlaySection from "../components/HowToPlaySection";
+import HowToPlaySection from '../components/HowToPlaySection';
 
 class HowToPlay extends React.Component {
+  componentDidMount() {
+    document.title = 'How to Play';
+  }
+
   render() {
     return (
       <>

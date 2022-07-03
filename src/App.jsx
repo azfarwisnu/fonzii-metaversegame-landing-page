@@ -11,7 +11,8 @@ import Heroes from './pages/Heroes';
 import Avatar from './pages/Avatar';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import HowToPlay from './pages/HowToPlay'
+import HowToPlay from './pages/HowToPlay';
+import Developer from './pages/Developer';
 
 class App extends React.Component {
   render() {
@@ -22,6 +23,8 @@ class App extends React.Component {
           <Route component={Avatar} path="/avatar" exact />
           <Route component={Heroes} path="/heroes" exact />
           <Route component={HowToPlay} path="/how-to-play" exact />
+          <Route component={Developer} path="/developer" exact />
+          <Route component={Home} path="/home" exact />
           <Route component={Home} path="/" exact />
         </Switch>
         <Footer />
