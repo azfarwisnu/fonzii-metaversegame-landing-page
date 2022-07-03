@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Heroes from './pages/Heroes';
 import Avatar from './pages/Avatar';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import HowToPlay from './pages/HowToPlay'
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route component={HowToPlay} path="/how-to-play" exact />
           <Route component={Home} path="/" exact />
         </Switch>
+        <Footer />
       </BrowserRouter>
     );
   }
