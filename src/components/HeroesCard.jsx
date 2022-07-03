@@ -27,7 +27,7 @@ class HeroesCard extends React.Component {
                     {this.props.data.buy.type}
                   </p>
                 </div>
-                <div className="col-12 col-md-6 text-md-end">
+                <div className="col-12 col-md-5 text-md-end">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"

@@ -9,6 +9,7 @@ class HeroesSection extends React.Component {
     data: [],
     page: 1,
     maxPage: 0,
+    lastHeroes: "",
   };
 
   fetchAssetHeroes = () => {
@@ -55,11 +56,12 @@ class HeroesSection extends React.Component {
     return (
       <>
         <div className="heroes-section container mt-4 pt-4 pb-4 mb-4">
-          <div className="top-section row bg-dark p-5">
+          <div className="top-section row bg-dark p-5 mx-4">
             <div className="col-12 col-md-3 left">
               <img
-                src="https://gog-art-assets.s3-ap-southeast-2.amazonaws.com/Content/Thumbnails/Heroes/Prielle/Thumbnail_Hero_Prielle_Elite.png"
+                src="https://gog-art-assets.s3-ap-southeast-2.amazonaws.com/Content/Thumbnails/Heroes/Aria/Thumbnail_Hero_Aria_Base.png"
                 alt="nft-testing"
+                className="mb-4"
               />
             </div>
             <div className="col-12 col-md-9 right">
@@ -69,17 +71,10 @@ class HeroesSection extends React.Component {
                 </h3>
                 <div className="box-message">
                   <p className="text-secondary text-justify">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to
-                    using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                    text, and a search for 'lorem ipsum' will uncover many web
-                    sites still in their infancy. Various versions have evolved
-                    over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
+                    heroes are characters that are used to play, with passive
+                    and active skills owned by heroes characters can attack
+                    existing minions and towers, in this way heroes have the
+                    value of skills and armor and skills in each unique.
                   </p>
                 </div>
                 <div className="pt-4 text-dark">
@@ -96,13 +91,13 @@ class HeroesSection extends React.Component {
                         <div>202k</div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2">
+                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
                       <div className="d-flex justify-content-between px-2 mt-2">
                         <div>Listed</div>
                         <div>1.9k</div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2">
+                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
                       <div className="d-flex justify-content-between px-2 mt-2">
                         <div>Sale</div>
                         <div>2.9k</div>

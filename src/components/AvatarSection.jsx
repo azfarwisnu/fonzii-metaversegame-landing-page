@@ -9,6 +9,7 @@ class AvatarSection extends React.Component {
     data: [],
     page: 1,
     maxPage: 0,
+    lastAvatar: "",
   };
 
   fetchAssetHeroes = () => {
@@ -55,31 +56,26 @@ class AvatarSection extends React.Component {
     return (
       <>
         <div className="heroes-section container mt-4 pt-4 pb-4 mb-4">
-        <div className="top-section row bg-dark p-5">
+          <div className="top-section row bg-dark p-5 mx-4">
             <div className="col-12 col-md-3 left">
               <img
                 src="https://mantial-nfts.s3.amazonaws.com/mantial-nfts/gog-main/3883.png"
                 alt="nft-testing"
+                className="mb-4"
               />
             </div>
             <div className="col-12 col-md-9 right">
               <div className="content">
                 <h3>
-                  <b>Heroes Collections</b>
+                  <b>Avatar Collections</b>
                 </h3>
                 <div className="box-message">
                   <p className="text-secondary text-justify">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to
-                    using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                    text, and a search for 'lorem ipsum' will uncover many web
-                    sites still in their infancy. Various versions have evolved
-                    over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
+                    avatar is a profile that is used by each user, each avatar
+                    has its own uniqueness, assets or components and its
+                    background will not be the same as other users, this is the
+                    hallmark of an avatar so it has a different value from the
+                    others.
                   </p>
                 </div>
                 <div className="pt-4 text-dark">
@@ -96,13 +92,13 @@ class AvatarSection extends React.Component {
                         <div>202k</div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2">
+                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
                       <div className="d-flex justify-content-between px-2 mt-2">
                         <div>Listed</div>
                         <div>1.9k</div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2">
+                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
                       <div className="d-flex justify-content-between px-2 mt-2">
                         <div>Sale</div>
                         <div>2.9k</div>

@@ -10,21 +10,26 @@ body {
     color: white;
 }
 
-.heroes-section .top-section {
+.heroes-section .top-section, .top-section {
     border-radius: 12px;
 }
 
-.heroes-section .top-section .left img, video {
+.heroes-section .top-section .left img, video, .top-section .left img, video {
     width: 100%;
     height: auto;
     border-radius: 12px;
 }
 
-.heroes-section .top-section .right .spec {
+.heroes-section .top-section .right .spec, .top-section .right .spec {
     border-radius: 8px;
     font-weight: 800;
     font-size: 14px;
     background-color: #E0F300 !important;
+}
+
+.top-section .right h4 {
+    color: #E0F300 !important;
+    font-weight: bold;
 }
 
 .heroes-section .mid-section .content-mid .box-card {
