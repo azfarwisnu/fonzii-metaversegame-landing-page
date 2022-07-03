@@ -37,7 +37,7 @@ class NavBar extends React.Component {
                   <a className="nav-link link-light" href="/">
                     Home
                   </a>
-                  <a className="nav-link link-light" href="#about">
+                  <a className="nav-link link-light" href="/#about">
                     About
                   </a>
                   <a className="nav-link link-light" href="/how-to-play">

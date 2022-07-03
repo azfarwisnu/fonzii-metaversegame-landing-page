@@ -6,7 +6,7 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-        <footer className="mt-5 pt-5">
+        <footer className="mt-5 pt-5 mb-4 pb-4">
           <div className="text-center">
             <img src={logo} alt="logo" className="img-fluid" />
             <div className="mt-3">
@@ -37,7 +37,7 @@ class Footer extends React.Component {
               </a>
             </div>
           </div>
-          <p className="text-center mt-3">Copyright by Duo Kemayoran - ITechno Cup PNJ</p>
+          <p className="text-center mt-3 mx-2">Copyright by du0_Kemayoran - ITechno Cup PNJ</p>
         </footer>
       </>
     );

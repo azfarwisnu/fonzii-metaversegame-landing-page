@@ -147,12 +147,12 @@ class HowToPlaySection extends React.Component {
                 <div
                   className="bg-dark top-section"
                   data-aos="fade-up"
-                  data-aos-offset="50"
-                  data-aos-delay="1"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  data-aos-mirror="true"
-                  data-aos-once="false"
+              data-aos-offset="50"
+              data-aos-delay="1"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
                 >
                   <h3 className="mt-4 pt-4 text-center">
                     Create Avatar, Download and Access Sandbox Game Maker
