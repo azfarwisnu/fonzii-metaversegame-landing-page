@@ -13,6 +13,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import HowToPlay from './pages/HowToPlay';
 import Developer from './pages/Developer';
+import Exchange from './pages/Exchange';
 
 class App extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class App extends React.Component {
           <Route component={Heroes} path="/heroes" exact />
           <Route component={HowToPlay} path="/how-to-play" exact />
           <Route component={Developer} path="/developer" exact />
+          <Route component={Exchange} path="/exchange" exact />
           <Route component={Home} path="/home" exact />
           <Route component={Home} path="/" exact />
         </Switch>
