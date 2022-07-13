@@ -1,15 +1,15 @@
-import React from "react";
-import Axios from "axios";
+import React from 'react';
+import Axios from 'axios';
 
-import AvatarCard from "./AvatarCard";
-import { API_URL } from "../constants/API";
+import AvatarCard from './AvatarCard';
+import { API_URL } from '../constants/API';
 
 class AvatarSection extends React.Component {
   state = {
     data: [],
     page: 1,
     maxPage: 0,
-    lastAvatar: "",
+    lastAvatar: '',
   };
 
   fetchAssetHeroes = () => {
@@ -56,54 +56,45 @@ class AvatarSection extends React.Component {
     return (
       <>
         <div className="heroes-section container mt-4 pt-4 pb-4 mb-4">
-          <div className="top-section row bg-dark p-5 mx-4">
-            <div className="col-12 col-md-3 left">
+          <div className="top-section row g-0 gy-md-3 gx-md-5 bg-dark mb-4 p-3 p-md-5 m-2">
+            <div className="col-12 col-md-4">
               <img
                 src="https://mantial-nfts.s3.amazonaws.com/mantial-nfts/gog-main/3883.png"
                 alt="nft-testing"
-                className="mb-4"
+                className="img-fluid mb-3"
               />
             </div>
-            <div className="col-12 col-md-9 right">
-              <div className="content">
-                <h3>
-                  <b>Avatar Collections</b>
-                </h3>
-                <div className="box-message">
-                  <p className="text-secondary text-justify">
-                    avatar is a profile that is used by each user, each avatar
-                    has its own uniqueness, assets or components and its
-                    background will not be the same as other users, this is the
-                    hallmark of an avatar so it has a different value from the
-                    others.
-                  </p>
+            <div className="col-12 col-md-8 d-flex flex-column">
+              <h3 className="fw-bold">Avatar Collections</h3>
+              <p className="text-secondary text-justify">
+                Avatar is a profile that is used by each user, each avatar has
+                its own uniqueness, assets or components and its background will
+                not be the same as other users, this is the hallmark of an
+                avatar so it has a different value from the others.
+              </p>
+              <div className="row g-0 spec mb-3 mt-auto">
+                <div className="col-12 col-md-6">
+                  <div className="d-flex justify-content-between item">
+                    <div>Floor</div>
+                    <div>16.9k</div>
+                  </div>
                 </div>
-                <div className="pt-4 text-dark">
-                  <div className="row">
-                    <div className="col-12 col-md-5 spec mb-4 mx-2 bg-secondary pb-2">
-                      <div className="d-flex justify-content-between px-2 mt-2">
-                        <div>FLOOR</div>
-                        <div>16.9k</div>
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-5 spec mb-4 mx-2 bg-secondary pb-2">
-                      <div className="d-flex justify-content-between px-2 mt-2">
-                        <div>Total Vol</div>
-                        <div>202k</div>
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
-                      <div className="d-flex justify-content-between px-2 mt-2">
-                        <div>Listed</div>
-                        <div>1.9k</div>
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
-                      <div className="d-flex justify-content-between px-2 mt-2">
-                        <div>Sale</div>
-                        <div>2.9k</div>
-                      </div>
-                    </div>
+                <div className="col-12 col-md-6">
+                  <div className="d-flex justify-content-between item">
+                    <div>Total Vol</div>
+                    <div>202k</div>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6">
+                  <div className="d-flex justify-content-between item">
+                    <div>Listed</div>
+                    <div>1.9k</div>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6">
+                  <div className="d-flex justify-content-between item">
+                    <div>Sale</div>
+                    <div>2.9k</div>
                   </div>
                 </div>
               </div>

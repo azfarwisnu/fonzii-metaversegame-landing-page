@@ -11,66 +11,48 @@ body {
 }
 
 nav .navbar-nav .active {
-  color: #E0F300;
+  color: #e0f300;
 }
 
 .home-section .carousel button {
   width: 100%;
 }
 
-.heroes-section .top-section, .top-section {
-    border-radius: 12px;
-}
-
-.heroes-section .top-section .left img, video, .top-section .left img, video {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
-.heroes-section .top-section .right .spec, .top-section .right .spec {
-    border-radius: 8px;
-    font-weight: 800;
-    font-size: 14px;
-    background-color: #E0F300 !important;
-}
-
 .heroes-section .top-section {
   border-radius: 12px;
 }
 
-.heroes-section .top-section .left img,
-video {
-  width: 100%;
-  height: auto;
+.heroes-section .top-section img {
   border-radius: 12px;
 }
 
-.heroes-section .top-section .right .spec {
-  border-radius: 8px;
-  font-weight: 800;
-  font-size: 14px;
+.heroes-section .top-section .spec .item {
+  border-radius: 12px;
   background-color: #e0f300 !important;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  margin: 5px 0px 5px 0px;
 }
 
-.top-section .right h4 {
-    color: #E0F300 !important;
-    font-weight: bold;
+@media screen and (min-width: 768px) {
+  .heroes-section .top-section .spec .item:nth-child(odd) {
+    margin-right: 8px;
+  }
+
+  .heroes-section .top-section .spec .item:nth-child(even) {
+    margin-left: 8px;
+  }
 }
 
 .heroes-section .mid-section .content-mid .box-card {
   border-radius: 12px;
   color: #e0f300;
+  min-height: 100%;
 }
 
 .heroes-section .mid-section h3 {
   font-weight: 800px !important;
-}
-
-.heroes-section .mid-section .content-mid .box-card img {
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .heroes-section .mid-section .content-mid .box-card .btn,
@@ -113,11 +95,11 @@ footer {
 }
 
 footer .bi {
-  color: #E0F300;
+  color: #e0f300;
 }
 
 .developer-section .bi {
-  color: #E0F300;
+  color: #e0f300;
 }
 
 .exchange-section .exchange-img {
@@ -127,5 +109,5 @@ footer .bi {
 }
 
 .exchange-section .text-primary {
-  color: #E0F300 !important;
+  color: #e0f300 !important;
 }

@@ -1,15 +1,15 @@
-import React from "react";
-import Axios from "axios";
+import React from 'react';
+import Axios from 'axios';
 
-import HeroesCard from "./HeroesCard";
-import { API_URL } from "../constants/API";
+import HeroesCard from './HeroesCard';
+import { API_URL } from '../constants/API';
 
 class HeroesSection extends React.Component {
   state = {
     data: [],
     page: 1,
     maxPage: 0,
-    lastHeroes: "",
+    lastHeroes: '',
   };
 
   fetchAssetHeroes = () => {
@@ -56,53 +56,45 @@ class HeroesSection extends React.Component {
     return (
       <>
         <div className="heroes-section container mt-4 pt-4 pb-4 mb-4">
-          <div className="top-section row bg-dark p-5 mx-4">
-            <div className="col-12 col-md-3 left">
+          <div className="top-section row g-0 gy-md-3 gx-md-5 bg-dark mb-4 p-3 p-md-5 m-2">
+            <div className="col-12 col-md-4">
               <img
                 src="https://gog-art-assets.s3-ap-southeast-2.amazonaws.com/Content/Thumbnails/Heroes/Aria/Thumbnail_Hero_Aria_Base.png"
                 alt="nft-testing"
-                className="mb-4"
+                className="img-fluid mb-3"
               />
             </div>
-            <div className="col-12 col-md-9 right">
-              <div className="content">
-                <h3>
-                  <b>Heroes Collections</b>
-                </h3>
-                <div className="box-message">
-                  <p className="text-secondary text-justify">
-                    heroes are characters that are used to play, with passive
-                    and active skills owned by heroes characters can attack
-                    existing minions and towers, in this way heroes have the
-                    value of skills and armor and skills in each unique.
-                  </p>
+            <div className="col-12 col-md-8 d-flex flex-column">
+              <h3 className="fw-bold">Heroes Collections</h3>
+              <p className="text-secondary text-justify">
+                Heroes are characters that are used to play, with passive and
+                active skills owned by heroes characters can attack existing
+                minions and towers, in this way heroes have the value of skills
+                and armor and skills in each unique.
+              </p>
+              <div className="row g-0 spec mb-3 mt-auto">
+                <div className="col-12 col-md-6">
+                  <div className="d-flex justify-content-between item">
+                    <div>Floor</div>
+                    <div>16.9k</div>
+                  </div>
                 </div>
-                <div className="pt-4 text-dark">
-                  <div className="row">
-                    <div className="col-12 col-md-5 spec mb-4 mx-2 bg-secondary pb-2">
-                      <div className="d-flex justify-content-between px-2 mt-2">
-                        <div>FLOOR</div>
-                        <div>16.9k</div>
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-5 spec mb-4 mx-2 bg-secondary pb-2">
-                      <div className="d-flex justify-content-between px-2 mt-2">
-                        <div>Total Vol</div>
-                        <div>202k</div>
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
-                      <div className="d-flex justify-content-between px-2 mt-2">
-                        <div>Listed</div>
-                        <div>1.9k</div>
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-5 spec mx-2 bg-secondary pb-2 mb-4">
-                      <div className="d-flex justify-content-between px-2 mt-2">
-                        <div>Sale</div>
-                        <div>2.9k</div>
-                      </div>
-                    </div>
+                <div className="col-12 col-md-6">
+                  <div className="d-flex justify-content-between item">
+                    <div>Total Vol</div>
+                    <div>202k</div>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6">
+                  <div className="d-flex justify-content-between item">
+                    <div>Listed</div>
+                    <div>1.9k</div>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6">
+                  <div className="d-flex justify-content-between item">
+                    <div>Sale</div>
+                    <div>2.9k</div>
                   </div>
                 </div>
               </div>
