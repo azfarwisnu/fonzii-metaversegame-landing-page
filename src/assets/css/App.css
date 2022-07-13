@@ -119,3 +119,13 @@ footer .bi {
 .developer-section .bi {
   color: #E0F300;
 }
+
+.exchange-section .exchange-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.exchange-section .text-primary {
+  color: #E0F300 !important;
+}
