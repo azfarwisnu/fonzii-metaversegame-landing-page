@@ -39,14 +39,14 @@ class HomeSection extends React.Component {
   };
 
   renderCardHeroes = () => {
-    return this.state.dataHeroes.map((val) => {
-      return <HeroesCard data={val} />;
+    return this.state.dataHeroes.map((val, index) => {
+      return <HeroesCard data={val} key={index} />;
     });
   };
 
   renderCardAvatar = () => {
-    return this.state.dataAvatar.map((val) => {
-      return <AvatarCard data={val} />;
+    return this.state.dataAvatar.map((val, index) => {
+      return <AvatarCard data={val} key={index} />;
     });
   };
 

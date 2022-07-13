@@ -16,13 +16,13 @@ class NavBar extends React.Component {
   render() {
     return (
       <>
-        <nav class="navbar navbar-expand-md">
-          <div class="container">
-            <a class="navbar-brand" href="/">
+        <nav className="navbar navbar-expand-md">
+          <div className="container">
+            <a className="navbar-brand" href="/">
               <img src={logo} alt="logo" />
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -33,10 +33,10 @@ class NavBar extends React.Component {
               <i className="bi bi-list fs-1 text-white"></i>
             </button>
             <div
-              class="collapse navbar-collapse justify-content-end"
+              className="collapse navbar-collapse justify-content-end"
               id="navbarNavAltMarkup"
             >
-              <div class="navbar-nav">
+              <div className="navbar-nav">
                 <NavItem name="Home" href="/" />
                 <NavItem name="About" href="/#about" />
                 <NavItem name="Heroes" href="/heroes" />

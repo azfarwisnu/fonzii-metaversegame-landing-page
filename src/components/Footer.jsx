@@ -11,19 +11,19 @@ class Footer extends React.Component {
             <img src={logo} alt="logo" className="img-fluid" />
             <div className="mt-3">
               <p>
-                <a href="https://www.guildofguardians.com/" class="link-light">
+                <a href="https://www.guildofguardians.com/" className="link-light">
                   Guild of Guardians
                 </a>
               </p>
               <p>
-                <a href="https://www.sandbox.game/en/" class="link-light">
+                <a href="https://www.sandbox.game/en/" className="link-light">
                   Sandbox
                 </a>
               </p>
               <p>
                 <a
                   href="https://market.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11"
-                  class="link-light"
+                  className="link-light"
                 >
                   Market
                 </a>
@@ -31,7 +31,7 @@ class Footer extends React.Component {
               <p>
                 <a
                   href="/developer"
-                  class="link-light"
+                  className="link-light"
                 >
                   Developer Info
                 </a>
@@ -40,17 +40,17 @@ class Footer extends React.Component {
           </div>
           <div className="text-center">
             <div>
-              <a href="https://twitter.com/GuildOfGuardian" class="link-light">
-                <i class="bi bi-twitter fs-1 px-3"></i>
+              <a href="https://twitter.com/GuildOfGuardian" className="link-light">
+                <i className="bi bi-twitter fs-1 px-3"></i>
               </a>
-              <a href="https://discord.gg/UdejGr9Wg7" class="link-light">
-                <i class="bi bi-discord fs-1 px-3"></i>
+              <a href="https://discord.gg/UdejGr9Wg7" className="link-light">
+                <i className="bi bi-discord fs-1 px-3"></i>
               </a>
             </div>
           </div>
           <p className="text-center mt-3 mx-2">
             Copyright by{' '}
-            <a href="/developer" class="link-light">
+            <a href="/developer" className="link-light">
               du0_Kemayoran
             </a>{' '}
             - ITechno Cup PNJ
