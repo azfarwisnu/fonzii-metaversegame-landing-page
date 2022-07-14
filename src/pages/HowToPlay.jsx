@@ -4,7 +4,7 @@ import HowToPlaySection from '../components/HowToPlaySection';
 
 class HowToPlay extends React.Component {
   componentDidMount() {
-    document.title = 'How to Play';
+    document.title = 'GoG x Sandbox | How to Play';
   }
 
   render() {

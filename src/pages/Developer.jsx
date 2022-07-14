@@ -3,14 +3,18 @@ import React from 'react';
 import ondel from '../assets/collection/ondel.jpg';
 
 class Developer extends React.Component {
+  componentDidMount() {
+    document.title = 'GoG x Sandbox | Developer Info';
+  }
+
   render() {
     return (
       <div className="container developer-section">
         <div className="top-section row bg-dark p-5 mx-4 mb-4 pb-4">
-          <div className="col-12 col-md-3 left">
-            <img src={ondel} alt="ondel" className="mb-4" />
+          <div className="col-12 col-md-4 left">
+            <img src={ondel} alt="ondel" className="mb-4 img-fluid" />
           </div>
-          <div className="col-12 col-md-9 right">
+          <div className="col-12 col-md-8 right">
             <div className="content">
               <h3>
                 <b>Create by Duo Kemayoran</b>

@@ -3,7 +3,7 @@ import ExchangeSection from '../components/ExchangeSection';
 
 class Exchange extends React.Component {
   componentDidMount() {
-    document.title = 'Exchange';
+    document.title = 'GoG x Sandbox | Exchange';
   }
 
   render() {

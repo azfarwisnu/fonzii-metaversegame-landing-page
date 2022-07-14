@@ -15,7 +15,7 @@ class HowToPlaySection extends React.Component {
               <img
                 src="https://www.sandbox.game/img/13_Create/GameMaker/SwordCharacter.png"
                 alt="nft-testing"
-                className="mb-4"
+                className="mb-4 img-fluid"
               />
             </div>
             <div className="col-12 col-md-9 right">
