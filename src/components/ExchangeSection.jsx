@@ -1,64 +1,29 @@
-import React from 'react';
+import React from "react";
+import Axios from "axios";
 
-import ExchangeItem from './ExchangeItem';
+import ExchangeItem from "./ExchangeItem";
 
 class ExchangeSection extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { matches: window.matchMedia('(min-width: 768px)').matches };
+    this.state = {
+      matches: window.matchMedia("(min-width: 768px)").matches,
+      market: [],
+    };
   }
 
-  markets = [
-    {
-      market_cap_rank: 1,
-      name: 'Bitcoin',
-      image:
-        'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579',
-      current_price: 298347046,
-      total_volume: 337426641803368,
-      last_updated: '2022-07-12T13:13:28.352Z',
-    },
-    {
-      market_cap_rank: 1,
-      name: 'Bitcoin',
-      image:
-        'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579',
-      current_price: 298347046,
-      total_volume: 337426641803368,
-      last_updated: '2022-07-12T13:13:28.352Z',
-    },
-    {
-      market_cap_rank: 1,
-      name: 'Bitcoin',
-      image:
-        'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579',
-      current_price: 298347046,
-      total_volume: 337426641803368,
-      last_updated: '2022-07-12T13:13:28.352Z',
-    },
-    {
-      market_cap_rank: 1,
-      name: 'Bitcoin',
-      image:
-        'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579',
-      current_price: 298347046,
-      total_volume: 337426641803368,
-      last_updated: '2022-07-12T13:13:28.352Z',
-    },
-    {
-      market_cap_rank: 1,
-      name: 'Bitcoin',
-      image:
-        'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579',
-      current_price: 298347046,
-      total_volume: 337426641803368,
-      last_updated: '2022-07-12T13:13:28.352Z',
-    },
-  ];
+  fetchMarket = () => {
+    Axios.get(
+      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=idr"
+    ).then((result) => {
+      this.setState({ market: result.data });
+    });
+  };
 
   componentDidMount() {
     const handler = (e) => this.setState({ matches: e.matches });
-    window.matchMedia('(min-width: 768px)').addEventListener('change', handler);
+    window.matchMedia("(min-width: 768px)").addEventListener("change", handler);
+    this.fetchMarket();
   }
 
   render() {
@@ -66,12 +31,10 @@ class ExchangeSection extends React.Component {
       <>
         <div className="container exchange-section py-5">
           <h1 className="text-center">LIVE EXCHANGE</h1>
-          <h1 className="text-center text-primary">
-            COIN -{' '}
-            <img
-              src="https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/IDR.svg"
-              alt="indonesia logo"
-            />
+          <h1 className="text-center">
+            COIN
+            <i className="mx-3 bi bi-arrow-right text-primary"></i>
+            IDR
           </h1>
           <div className="exchange-table mt-5">
             {this.state.matches && (
@@ -83,8 +46,8 @@ class ExchangeSection extends React.Component {
                 <div className="col-md fw-bold">Last Update</div>
               </div>
             )}
-            {this.markets.map((market) => {
-              return <ExchangeItem item={market} />;
+            {this.state.market.slice(0, 30).map((val) => {
+              return <ExchangeItem item={val} />;
             })}
           </div>
         </div>
