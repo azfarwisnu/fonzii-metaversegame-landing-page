@@ -34,7 +34,7 @@ class ExchangeItem extends React.Component {
             <div className="col-6 fw-bold">Total Volume</div>
           )}
           <div className="col-6 col-md text-primary">
-            Rp {this.props.item.current_price.toLocaleString('id')}
+            Rp {this.props.item.total_volume.toLocaleString('id')}
           </div>
           {!this.state.matches && (
             <div className="col-6 fw-bold">Last Update</div>

@@ -24,7 +24,7 @@ class Developer extends React.Component {
                 <div className="row pt-4">
                   <div className="col-12 col-md-6 mb-4">
                     <h4>Farhan Alba Saputra</h4>
-                    <p>Universitas Gunadarma Teknik Informatika 2020</p>
+                    <p>Universitas Gunadarma - Teknik Informatika 2020</p>
                     <a href="https://github.com/falbas" class="link-light">
                       <i class="bi bi-github fs-3"></i>
                     </a>
@@ -37,7 +37,7 @@ class Developer extends React.Component {
                   </div>
                   <div className="col-12 col-md-6 mb-4">
                     <h4>M. Azfar Wisnu</h4>
-                    <p>Universitas Gunadarma Teknik Informatika 2020</p>
+                    <p>Universitas Gunadarma - Teknik Informatika 2020</p>
                     <a href="https://github.com/azfarwisnu" class="link-light">
                       <i class="bi bi-github fs-3"></i>
                     </a>

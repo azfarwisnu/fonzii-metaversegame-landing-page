@@ -111,3 +111,11 @@ footer .bi {
 .exchange-section .text-primary {
   color: #e0f300 !important;
 }
+
+.how-to-play-section .top-section {
+  border-radius: 12px;
+}
+
+.developer-section .top-section {
+  border-radius: 12px;
+}
