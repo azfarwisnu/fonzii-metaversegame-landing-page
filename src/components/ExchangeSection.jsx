@@ -29,8 +29,8 @@ class ExchangeSection extends React.Component {
   render() {
     return (
       <>
-        <div className="container exchange-section py-5">
-          <h1 className="text-center">LIVE EXCHANGE</h1>
+        <div className="container exchange-section py-5 px-4 px-md-0">
+          <h1 className="text-center fw-bold">LIVE EXCHANGE</h1>
           <h1 className="text-center">
             COIN
             <i className="mx-3 bi bi-arrow-right text-primary"></i>
